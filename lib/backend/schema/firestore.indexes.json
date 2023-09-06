@@ -1,0 +1,126 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "search",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "search_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Product_Image",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "UserId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Order_details",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Order_Time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Adress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "userid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Default_Add",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Product_Master",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Catagorey_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Adding_Time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Order_details",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "UserId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Is_Order",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Order_Time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Order_details",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Is_Order",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Is_Delivered",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Order_Time",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "fcm_tokens",
+      "fieldPath": "fcm_token",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}
